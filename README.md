@@ -7,7 +7,7 @@ A hands-on project combining predictive modeling with business intelligence. I u
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/bad197be-d94f-4b07-ae09-93731c629d01" width="100%"> | <img src="https://github.com/user-attachments/assets/5b93914b-0ebf-4820-8f74-f64088dc8c86" width="100%"> |
 
-The V2 dashboard tracks the performance of the **Memory-Active Forecast** model, highlighting how the integration of historical seasonal multipliers drastically reduces error during high-volatility holiday periods.
+The V2 dashboard tracks the performance of the **Memory-Active Forecast** model, highlighting how the integration of historical seasonal multipliers reduces error during high-volatility holiday periods.
 
 ---
 #### 1. Full Timeline View (All Data)
@@ -17,9 +17,8 @@ The V2 dashboard tracks the performance of the **Memory-Active Forecast** model,
 
 #### 2. Memory-Active Phase View (2011+ Focused)
 * **What it shows:** Filters the dashboard exclusively to the period where the 52-week seasonal multipliers are actively running.
-* **Performance Leap:** Isolating the memory model demonstrates a massive drop in overall error. Individual store MAPEs drop significantly (e.g., Store 1 falls to **3.73%**, Store 4 drops to a highly accurate **3.38%**).
-* **Optimized Metrics:** Network-wide **MAPE decreases to 4.27%**, MAE drops to **44.69K**, and the gross forecast variance is slashed nearly in half down to **182.99M**, validating the effectiveness of the V2 pipeline.
-
+* **Performance Leap:** Isolating the memory model demonstrates the drop in overall error. Individual store MAPEs drop significantly (e.g., Store 1 falls to **3.73%**, Store 4 drops to a highly accurate **3.38%**).
+* **Optimized Metrics:** Network-wide **MAPE decreases to 4.27%**, MAE drops to **44.69K**, and the gross forecast variance is slashed nearly in half down to **182.99M**, showing off the improvement.
 #### ⚠️ Performance Diagnostic & Next Steps
 
 * **The Problem:** The V2 model captures fixed-date holidays perfectly but fails on **floating holidays** (like Easter and Thanksgiving). A strict 52-week shift creates a "Phase Shift Error," applying holiday multipliers to normal weeks when dates move across the retail calendar.
